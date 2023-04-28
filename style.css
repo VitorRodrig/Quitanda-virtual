@@ -1,0 +1,151 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav.menuHeader, footer{
+    width: 85%;
+    background-color: #9e4c11;
+    box-shadow: 1px 1px 11px rgba(128, 128, 128, 0.377);
+}
+
+header{
+    height: 10vh;
+    display: flex;
+}
+
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+header .logo img{
+    width: 50%;
+}
+
+nav .menuHeader{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav .menu a{
+    text-decoration: none;
+    color: black;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+nav .menu a:hover{
+    background-color: #0e3b0c;
+    color: #fff;
+    border-radius: 3px;
+}
+
+main{
+    margin-top: 2px;
+    width: 85%;
+    height: 1000px;
+    background-color: #94857b;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.637);
+}
+
+main .container{
+    display: flex;
+}
+
+main .container .products{
+    padding-top: 16px;
+    flex: 0.2;
+    height: 1000px;
+    background-color: #635850;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container section{
+    flex:1;
+}
+
+main .container .products a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2px 8px;
+    text-align: center;
+}
+
+main .container .products a:hover{
+    text-decoration: underline;
+}
+
+main .container section .boxProduct{
+    margin-top: 20px;
+    display: flex;
+    width: 95%;
+    margin-right: 10px;
+}
+
+section .boxProduct .product{
+    flex: 1;
+    margin: 3px;
+    background-color: #c4bbb9;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+section .boxProduct .product p{
+    color: rgba(0, 0, 0, 0.411);
+}
+
+section .boxProduct .product .imgBoxCard{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+}
+
+section .boxProduct .product .imgBoxCard:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer a{
+    color: #ccc;
+    text-decoration: underline;
+}
+
+footer a:visited{
+    color: #ccc;
+}
+
+@media(max-width: 375px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header, nav.menuHeader, footer{
+        width: 290px;
+    }
+
+    
+    
+}
+
+
+
+
